@@ -56,6 +56,13 @@ class BokehProgram:
             """
         )
 
+        self.lp_filter_div = Div(
+            text="""
+                <p><b>Low Pass Filter parameters:</b></p>
+            """
+
+        )
+
         self.amplitude_slider = Slider(
             start=-5,
             end=5,
@@ -403,6 +410,7 @@ class BokehProgram:
             self.rp_slider,
             self.rs_slider,
 
+            self.lp_filter_div,
             self.windows_size_slider,
             
             self.show_original_checkbox,
